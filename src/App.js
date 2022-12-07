@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React,{useState} from 'react'
+import "./App.css"
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+  const [emoji,setEmoji]= useState("👑")
+
+  return(
+    <div className='first-container'>
+      <div className='App-title-container'>
+        <h2 className='App-title'>Emoji Kit🧡</h2>
+      </div>
+
+      <div className='second-container'>
+          <h3 className='emoji'>
+            {emoji}
+          </h3>
+      </div>
+
+      <div className='third-container'>
+        <div className='emoji-item' onClick={()=>{setEmoji('👑')}}>👑</div>
+        <div className='emoji-item' onClick={()=>{setEmoji('💎')}}>💎</div>
+        <div className='emoji-item' onClick={()=>{setEmoji('🥰')}}>🥰</div>
+        <div className='emoji-item' onClick={()=>{setEmoji('🎁')}}>🎁</div>
+        <div className='emoji-item' onClick={()=>{setEmoji('⏲')}}>⏲</div>
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

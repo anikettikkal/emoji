@@ -17,15 +17,16 @@
 }
 
 .second-container{
-  background-color: white;
+  
   height:250px;
   width:250px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 50px;
+  margin-top: 100px;
   border-radius: 15px;
-  box-shadow: 2px 2px 3px 3px orangered;
+  box-shadow: 0px 0px 5px 3px orangered;
+  
 }
 
 .emoji{
@@ -33,7 +34,7 @@
   justify-content: center;
   align-items: center;
   height:100%;
-  font-size: 120px;
+  
 }
 
 .third-container{
@@ -41,7 +42,7 @@
   display: flex;
   justify-content: space-evenly;
   margin-top: 100px;
-  width:50%;
+  width:400px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 35px;
@@ -49,10 +50,66 @@
 }
 
 .emoji-item{
-  font-size: 40px;
+  font-size: 30px;
   margin: 10px;
   cursor: pointer;
 }
 .emoji-item:hover{
   transform: scale(1.3);
 }
+
+.emoji-editor-container{
+  display: flex;
+  justify-content: space-around;
+}
+
+.colors-container{
+  background-color: white;
+  display: flex;
+  justify-content:space-evenly ;
+  width:450px;
+  padding: 20px;
+  border-radius: 30px;
+  margin-top: 110px;
+}
+
+.color-item{
+  border-radius: 5px;
+  border: 1px solid grey;
+  width:60px;
+  height: 50px;
+
+}
+.color-item:hover{
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.bg-white{
+  background-color: white;
+}
+.bg-palegreen{
+  background-color: palegreen;
+}
+.bg-skyblue{
+  background-color: skyblue;
+}
+.bg-yellow{
+  background-color: yellow;
+}
+.bg-orange{
+  background-color: orange;
+}
+
+.size-container{
+  background-color: white;
+  width:450px;
+  height:40px;
+  padding: 10px;
+  border-radius: 30px;
+  margin-top: 50px;
+}
+
+.size-slider{
+  width:100%;
+}
+
